@@ -2,7 +2,7 @@
   display: block;
   height: 52px;
   width: 176px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
