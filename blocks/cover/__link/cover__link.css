@@ -1,4 +1,8 @@
 .cover__link {
+  background-image: url(../../../images/cover-trains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,13 +14,14 @@
   padding: 0;
   z-index: 1;
   aspect-ratio: 16/10;
+  gap: 32px;
 }
 
 .cover__link::after {
   content: '';
   position: absolute;
   background: #2A2C2F;
-  opacity: .2;
+  opacity: .3;
   top: 0;
   right: 0;
   bottom: 0;
@@ -29,3 +34,8 @@
   opacity: .8;
 }
 
+@media screen and (max-width: 520px) {
+  .cover__link {
+    gap: 16px;
+  }
+}
